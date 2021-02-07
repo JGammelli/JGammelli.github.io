@@ -1,0 +1,28 @@
+
+@import "./menu";
+@import "./variables";
+@import "./home";
+@import "./about";
+@import "./portfolio";
+@import "./contact";
+
+body{
+    background-image: url("../img/dark.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+    background-position: center;
+    position: relative;
+    .row{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+}
+

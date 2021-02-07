@@ -1,0 +1,40 @@
+.about-container{
+    display: flex;
+    flex-flow: column;
+    padding: 12vw;
+    padding-left: 30vw;
+    
+    .about-item{
+        color: $mainColor;
+        h1{
+            font-size: $h1size;
+            margin-bottom: 0;
+            text-shadow: 2px 2px $h1Shadow;
+        }
+        p{
+            font-size: $pSize;
+            margin-top: 2vw;
+        }
+    }
+}
+
+
+
+/*--------------MOBILE--------------*/
+
+@media screen and (max-width: 800px){
+    .about-container{
+        padding:0;
+        margin-top:35vw;
+        margin-left: 13vw;
+        margin-right: 7vw;
+        .about-item{
+            h1{
+                font-size: $Mh1;
+            }
+            p{
+                font-size: $Mp;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import "./variables";
+
+.menu-container{
+    display: flex;
+    flex-flow: column;
+    width: 5em;
+    height: 100vh;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: space-around;
+    position: fixed;
+    .menu-item{
+        text-decoration: none;
+        text-align: center;
+        text-shadow: 2px 2px $h1Shadow;
+        color:$mainColor; 
+        a{     
+            &:hover{
+                cursor: pointer;
+                color: $hoverColor;
+            }  
+            &:visited {
+                color:$mainColor;      
+            }    
+        } 
+    }
+}
+
+/*--------------MOBILE--------------*/
+
+@media screen and (max-width: 800px){
+    .menu-container{
+        flex-flow: row;
+        margin-left: 45vw;
+        margin-top: 3vh;
+        .menu-item{
+            margin-right: 15vw;
+        }
+    }
+}
